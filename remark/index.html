@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ubucon Europe 2019 Presentation</title>
+    <meta charset="utf-8">
+    <style >
+      @import url(style.css);
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+
+name: inverse
+layout: true
+class: center, middle, inverse
+
+---
+
+name: impact
+layout: true
+class: center, middle, impact, content
+
+---
+
+name: title
+layout: true
+class: title center
+
+---
+
+name: content
+layout: true
+
+---
+
+template: title
+name: main-title
+
+.content[
+
+# This is the Title of the Talk or Workshop
+
+.small[presentation by: Speaker on Ubucon Europe 2019]
+
+]
+
+---
+
+# About me
+
+.left-column[
+I may write a small paragraph about myself. 
+Maybe share what I do and some of my projects.
+But keep it short.
+
+.small[
+And maybe share some contacts and where to find me
+]
+
+.tiny.no-bullets[
+* **e-mail:** something [at] domain [dot] com 
+* **github:** https://github.com/ubucon-europe-2019
+* **twitter:** @twitterhandle
+* **telegram:** @telegramhandle
+]
+]
+
+.rigth-column[
+.center.pic-circle[
+
+<img src="img/pictogram-contacts-orange.svg" width="200">
+
+<img alt="what I love" src="img/pictogram-projects_we_love-orange.svg" width="100">
+<img alt="what I do" src="img/pictogram-calendar-orange.svg" width="100">
+<img alt="what I work" src="img/pictogram-cloud-orange.svg" width="100">
+
+]
+
+]
+
+---
+template: impact
+
+# Topic 1
+
+.tiny[(press `P` to see comments)]
+
+???
+
+### Welcome to the presentation mode
+
+This slide template may be used to introduce a different topic, 
+if it is a long talk with many topics.
+
+Don't use this template slide at all, if there is no need for it.
+Keep it simple.
+
+---
+
+# Sub topic 1.1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Donec tempus vel turpis fringilla eleifend. 
+Nam elementum consectetur risus, sit amet faucibus enim scelerisque at. 
+Nullam bibendum enim id sagittis mollis. Nulla facilisi. 
+
+In dignissim ut neque sit amet vulputate. 
+Praesent ultricies malesuada nisl, in iaculis sapien aliquet eget. 
+Mauris eleifend dolor mi. Proin bibendum rhoncus imperdiet. 
+Duis sollicitudin lorem at mattis iaculis. 
+
+* Fusce pulvinar, 
+    * sapien in varius tristique, 
+        * turpis ante interdum tortor.
+
+---
+
+# Sub topic 1.2
+
+Duis nibh nisi, ultrices vel lorem et, ultricies vulputate mi. 
+Vivamus pretium risus et dolor hendrerit mollis. 
+Integer aliquet libero vel euismod blandit. 
+Curabitur nibh justo, tincidunt a dolor ut, gravida posuere eros. 
+
+.center[
+<img src="img/ubuntu.png" width="200">
+]
+
+---
+
+template: inverse
+
+# This is an impactful pause slide ...
+
+Use this at will
+
+---
+
+# Sub topic 1.3
+
+## Code example 0
+
+```c
+printf("This is an example with code!");
+>> This is an example with code!
+```
+
+## Code example 1
+
+```
+For beautiful code snippets
+* like this one
+```
+
+\* inline `# code`
+
+---
+
+template: impact
+
+# The end
+
+---
+
+template: main-title
+
+.content[.align-center[
+## Thank you
+]]
+
+
+
+    </textarea>
+    <!--
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    -->
+    <script src="remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+        slideNumberFormat: '%current%',
+        ratio: '16:9',
+        //highlightStyle: 'monokai',
+        highlightLines: true,
+        highlightSpans: true
+      });
+    </script>
+  </body>
+</html>
+
