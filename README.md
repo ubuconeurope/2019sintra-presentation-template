@@ -12,6 +12,7 @@ Formats available (order of preference):
 1. Google Slides ([presentation link](https://docs.google.com/presentation/d/1CMGgc3AYt62IExihr3l_ksS9GEZyWUnoJIVHZeGeZhA/edit?usp=sharing)) | dependency: browser
 1. PPTX (MS Powerpoint Presentation) | dependency: Windows + MS Office (PowerPoint)
 1. KEY (Keynote) | dependency: MacOS + Keynote 
+1. LaTeX
 
 See below the usage instructions for each format, or the color schemes and instructions to build the ubucon theme (wip).
 
@@ -38,7 +39,6 @@ See below the usage instructions for each format, or the color schemes and instr
 * Open the template file, and edit from there.
 * If you already have a presentation in another theme, apply the ubucon theme to it and review all slides.
 
-
 ### Google Slides 
 
 **requirements:** browser
@@ -52,7 +52,6 @@ See below the usage instructions for each format, or the color schemes and instr
 * Open the template file, and edit from there.
 * If you already have a presentation in another theme, apply the ubucon theme to it and review all slides.
 
-
 ### KEY (Keynote) 
 **requirements:** MacOS + Keynote 
 
@@ -64,6 +63,8 @@ See below the usage instructions for each format, or the color schemes and instr
   * go to File > Change Theme
   * validate all slides
 
+### LaTeX
+**requirements:** LaTeX compiler
 
 ## Ubucon theme
 
