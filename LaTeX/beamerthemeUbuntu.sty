@@ -41,19 +41,12 @@
 
 \defbeamertemplate*{footline}{infolines theme}
 {
-  \leavevmode%
-  \hbox{%
-    \begin{beamercolorbox}[wd=.3333\paperwidth,left]{}%
-      \insertshortinstitute
-    \end{beamercolorbox}%
-    \begin{beamercolorbox}[wd=.3333\paperwidth,center]{}%
-      \insertframenumber{} / \inserttotalframenumber
+  \leavevmode
+  \hbox{
+    \begin{beamercolorbox}[left]{}
+      \insertframenumber{}
     \end{beamercolorbox}
-    \begin{beamercolorbox}[wd=.3333\paperwidth,right]{}%
-      \insertshortdate{}
-      \;
-    \end{beamercolorbox}
-  }%
+  }
 }
 
 \defbeamertemplate*{headline}{}
