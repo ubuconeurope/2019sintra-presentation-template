@@ -1,0 +1,57 @@
+% This file was originally taken from
+% https://github.com/stas/beamer-ubuntu
+% Copyright (c) 2019 Stas Suscov
+% The MIT License (MIT)
+% Read its full license at
+% https://github.com/stas/beamer-ubuntu/blob/master/LICENSE.txt
+
+\usetheme{default}
+\useoutertheme{default}
+\useinnertheme{circles}
+\usefonttheme{professionalfonts}
+
+\usepackage{fontspec}
+
+\setmainfont[Mapping=tex-text]{Ubuntu}
+
+\setbeamerfont{title}{size={\fontsize{48}{52}}}
+\setbeamerfont{frametitle}{size=\huge}
+\setbeamerfont{copyright in head/foot}{size=\Tiny}
+\setbeamerfont{framenumber in head/foot}{size=\Tiny}
+
+\setbeamertemplate{background canvas}{
+  \hspace{2cm}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \vspace{18.5cm}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      % \includegraphics[keepaspectratio]{background.png}
+    \end{column}
+  \end{columns}
+}
+\setbeamertemplate{frametitle}[default][center]
+\setbeamertemplate{navigation symbols}{} %no nav symbols
+
+\usepackage{color}
+\usecolortheme[RGB={221,72,20}]{structure}
+\setbeamercolor{normal text}{fg=gray}
+\setbeamercolor{copyright in head/foot}{fg=gray}
+\setbeamercolor{framenumber in head/foot}{fg=gray}
+
+\defbeamertemplate*{footline}{infolines theme}
+{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.3333\paperwidth,left]{}%
+      \insertshortinstitute
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.3333\paperwidth,center]{}%
+      \insertframenumber{} / \inserttotalframenumber
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.3333\paperwidth,right]{}%
+      \insertshortdate{}
+      \;
+    \end{beamercolorbox}
+  }%
+}
