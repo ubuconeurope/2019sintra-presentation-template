@@ -14,7 +14,7 @@
 
 \setmainfont[Mapping=tex-text]{Ubuntu}
 
-\setbeamerfont{title}{size={\fontsize{48}{52}}}
+\setbeamerfont{title}{size={\huge}}
 \setbeamerfont{frametitle}{size=\huge}
 \setbeamerfont{copyright in head/foot}{size=\Tiny}
 \setbeamerfont{framenumber in head/foot}{size=\Tiny}
@@ -54,4 +54,27 @@
       \;
     \end{beamercolorbox}
   }%
+}
+
+\defbeamertemplate*{headline}{}
+{
+	\leavevmode
+}
+
+\defbeamertemplate*{title page}{texsx}[1][]
+{
+  % WARNING: this makes the template assume and work well only with [aspectratio=169]
+  \begin{beamercolorbox}[wd=\paperwidth]{background}
+    % FIXME: have the image on the same directory as the template
+    \includegraphics[keepaspectratio, width=\paperwidth, height=\paperheight]{../backgrounds/bg-title.png}
+  \end{beamercolorbox}
+  \vskip-7cm%
+  \begin{beamercolorbox}[leftskip=5cm,wd=15cm]{title}
+    \usebeamerfont{title}\inserttitle
+  \end{beamercolorbox}
+  \begin{beamercolorbox}[]{author}
+    \usebeamerfont{author}\begin{flushright}\insertauthor\end{flushright}
+  \end{beamercolorbox}
+  \vskip7cm%
+  \vfill
 }
