@@ -13,6 +13,7 @@
  
 \usepackage[utf8]{inputenc}
 \usepackage{listings}
+\usepackage{svg}
 
 %Information to be included in the title page:
 \title{This is the Title of the Talk or Workshop}
@@ -23,9 +24,11 @@
  
 \begin{frame}
 \frametitle{About me}
-I may write a small paragraph about myself. Maybe share what I do and some of my projects. But keep it short.
+\begin{columns}[T]
+\begin{column}{.5\textwidth}
+\begin{block}{I may write a small paragraph about myself. Maybe share what I do and some of my projects. But keep it short.}
 
-\small{And maybe share some contacts and where to find me}
+And maybe share some contacts and where to find me
 
 \begin{itemize}
 \item{} e-mail: something [at] domain [dot] com
@@ -33,6 +36,18 @@ I may write a small paragraph about myself. Maybe share what I do and some of my
 \item{} twitter: @twitterhandle
 \item{} telegram: @telegramhandle
 \end{itemize}
+\end{block}
+\end{column}
+\begin{column}{.5\textwidth}
+\begin{center}
+\includesvg[width=70pt]{pictogram-contacts-orange.svg}
+
+\includesvg[width=35pt]{pictogram-projects_we_love-orange.svg}
+\includesvg[width=35pt]{pictogram-calendar-orange.svg}
+\includesvg[width=35pt]{pictogram-cloud-orange.svg}
+\end{center}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}
