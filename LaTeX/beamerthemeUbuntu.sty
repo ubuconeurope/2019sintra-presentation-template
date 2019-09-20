@@ -11,6 +11,9 @@
 \usefonttheme{professionalfonts}
 
 \usepackage{fontspec}
+\usepackage[absolute,overlay]{textpos}
+% Uncomment this to show a grid (useful for debugging textpos):
+% \usepackage[texcoord,grid,gridunit=mm,gridcolor=red!10,subgridcolor=green!10]{eso-pic}
 
 \setmainfont[Mapping=tex-text]{Ubuntu}
 
@@ -53,12 +56,14 @@
     \includegraphics[keepaspectratio, width=\paperwidth, height=\paperheight]{bg-title.png}
   \end{beamercolorbox}
   \vskip-7cm%
-  \begin{beamercolorbox}[leftskip=5cm,wd=15cm]{title}
-    \usebeamerfont{title}\inserttitle
-  \end{beamercolorbox}
-  \begin{beamercolorbox}[]{author}
-    \usebeamerfont{author}\begin{flushright}\insertauthor\end{flushright}
-  \end{beamercolorbox}
+  \begin{textblock*}{80mm}(65mm,30mm)
+    \begin{beamercolorbox}{title}
+    \usebeamerfont{title}\begin{flushright}\textbf{\inserttitle}\end{flushright}
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[]{author}
+    \usebeamerfont{author}\begin{flushright}\scriptsize presentation by: \insertauthor\end{flushright}
+    \end{beamercolorbox}
+  \end{textblock*}
   \vskip7cm%
   \vfill
 }
