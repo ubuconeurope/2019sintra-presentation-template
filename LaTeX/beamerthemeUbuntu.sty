@@ -21,6 +21,7 @@
 \setbeamerfont{frametitle}{size=\huge}
 \setbeamerfont{copyright in head/foot}{size=\Tiny}
 \setbeamerfont{framenumber in head/foot}{size=\Tiny}
+\setbeamerfont{thanks}{size=\large}
 
 \setbeamertemplate{background canvas}{
        \includegraphics[keepaspectratio, width=\paperwidth, height=\paperheight]{bg-slides.png}
@@ -62,6 +63,9 @@
     \end{beamercolorbox}
     \begin{beamercolorbox}[]{author}
     \usebeamerfont{author}\begin{flushright}\scriptsize presentation by: \insertauthor\end{flushright}
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[]{author}
+    \usebeamerfont{thanks}\insertsubtitle
     \end{beamercolorbox}
   \end{textblock*}
   \vskip7cm%
