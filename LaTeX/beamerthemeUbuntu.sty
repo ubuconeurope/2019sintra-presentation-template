@@ -1,0 +1,70 @@
+% This file was originally taken from
+% https://github.com/stas/beamer-ubuntu
+% Copyright (c) 2019 Stas Suscov
+% The MIT License (MIT)
+% Read its full license at
+% https://github.com/stas/beamer-ubuntu/blob/master/LICENSE.txt
+
+\usetheme{default}
+\useoutertheme{default}
+\useinnertheme{circles}
+\usefonttheme{professionalfonts}
+
+\usepackage{fontspec}
+\usepackage[absolute,overlay]{textpos}
+% Uncomment this to show a grid (useful for debugging textpos):
+% \usepackage[texcoord,grid,gridunit=mm,gridcolor=red!10,subgridcolor=green!10]{eso-pic}
+
+\setmainfont[Mapping=tex-text]{Ubuntu}
+
+\setbeamerfont{title}{size={\huge}}
+\setbeamerfont{frametitle}{size=\huge}
+\setbeamerfont{copyright in head/foot}{size=\Tiny}
+\setbeamerfont{framenumber in head/foot}{size=\Tiny}
+\setbeamerfont{thanks}{size=\large}
+
+\setbeamertemplate{background canvas}{
+       \includegraphics[keepaspectratio, width=\paperwidth, height=\paperheight]{bg-slides.png}
+}
+\setbeamertemplate{frametitle}[default][center]
+\setbeamertemplate{navigation symbols}{} %no nav symbols
+
+\usepackage{color}
+\usecolortheme[RGB={221,72,20}]{structure}
+\setbeamercolor{normal text}{fg=gray}
+\setbeamercolor{copyright in head/foot}{fg=gray}
+\setbeamercolor{framenumber in head/foot}{fg=gray}
+
+\defbeamertemplate*{footline}{infolines theme}
+{
+  \leavevmode
+  \hbox{
+    \begin{beamercolorbox}[left]{}
+      \insertframenumber{}
+    \end{beamercolorbox}
+  }
+}
+
+\defbeamertemplate*{headline}{}
+{
+	\leavevmode
+}
+
+\defbeamertemplate*{title page}{texsx}[1][]
+{
+  % WARNING: this makes the template assume and work well only with [aspectratio=169]
+  \begin{beamercolorbox}[wd=\paperwidth]{background}
+    \includegraphics[keepaspectratio, width=\paperwidth, height=\paperheight]{bg-title.png}
+  \end{beamercolorbox}
+  \begin{textblock*}{80mm}(65mm,25mm)
+    \begin{beamercolorbox}{title}
+    \usebeamerfont{title}\begin{flushright}\textbf{\inserttitle}\end{flushright}
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[]{author}
+    \usebeamerfont{author}\begin{flushright}\scriptsize presentation by: \insertauthor\end{flushright}
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[]{author}
+    \usebeamerfont{thanks}\insertsubtitle
+    \end{beamercolorbox}
+  \end{textblock*}
+}
